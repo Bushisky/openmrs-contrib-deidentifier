@@ -1,4 +1,4 @@
-UPDATE person_name SET given_name = 'Kitioko' WHERE right(person_name_id, 1) = 1;
+UPDATE person_name SET given_name = 'Kitioko' 	;
 UPDATE person_name SET given_name = 'Testing' WHERE right(person_name_id, 1) = 2;
 UPDATE person_name SET given_name = 'Blablala' WHERE right(person_name_id, 1) = 3;
 UPDATE person_name SET given_name = 'Wenger' WHERE right(person_name_id, 1) = 4;
@@ -108,17 +108,38 @@ UPDATE obs SET value_text = 'Henrietta' WHERE right(obs_id, 1) = 8 AND concept_i
 UPDATE obs SET value_text = 'Isaac' WHERE right(obs_id, 1) = 9 AND concept_id = 2299;
 UPDATE obs SET value_text = 'Josephine' WHERE right(obs_id, 1) = 0 AND concept_id = 2299;
 
-UPDATE obs SET value_text = 'Asante' WHERE (mod(obs_id, 100) - right(obs_id, 1))/10 = 1 AND concept_id = 2298;
-UPDATE obs SET value_text = 'Booyeah' WHERE (mod(obs_id, 100) - right(obs_id, 1))/10 = 2 AND concept_id = 2298;
-UPDATE obs SET value_text = 'Coolio' WHERE (mod(obs_id, 100) - right(obs_id, 1))/10 = 3 AND concept_id = 2298;
-UPDATE obs SET value_text = 'Duhuh' WHERE (mod(obs_id, 100) - right(obs_id, 1))/10 = 4 AND concept_id = 2298;
-UPDATE obs SET value_text = 'Eeek' WHERE (mod(obs_id, 100) - right(obs_id, 1))/10 = 5 AND concept_id = 2298;
-UPDATE obs SET value_text = 'Foo bar' WHERE (mod(obs_id, 100) - right(obs_id, 1))/10 = 6 AND concept_id = 2298;
-UPDATE obs SET value_text = 'Getouttahere' WHERE (mod(obs_id, 100) - right(obs_id, 1))/10 = 7 AND concept_id = 2298;
-UPDATE obs SET value_text = 'Hohoho' WHERE (mod(obs_id, 100) - right(obs_id, 1))/10 = 8 AND concept_id = 2298;
-UPDATE obs SET value_text = 'Imadoof' WHERE (mod(obs_id, 100) - right(obs_id, 1))/10 = 9 AND concept_id = 2298;
-UPDATE obs SET value_text = 'Jk' WHERE (mod(obs_id, 100) - right(obs_id, 1))/10 = 0 AND concept_id = 2298;
+-- Patient Identifiers
+UPDATE patient_identifier SET identifier = "00000000/00/000"  WHERE right(patient_identifier_id, 1) = 0;
+UPDATE patient_identifier SET identifier = "11111111/11/111"  WHERE right(patient_identifier_id, 1) = 1;
+UPDATE patient_identifier SET identifier = "22222222/22/222"  WHERE right(patient_identifier_id, 1) = 2;
+UPDATE patient_identifier SET identifier = "33333333/33/333"  WHERE right(patient_identifier_id, 1) = 3;
+UPDATE patient_identifier SET identifier = "44444444/44/444"  WHERE right(patient_identifier_id, 1) = 4;
+UPDATE patient_identifier SET identifier = "55555555/55/555"  WHERE right(patient_identifier_id, 1) = 5;
+UPDATE patient_identifier SET identifier = "66666666/66/666"  WHERE right(patient_identifier_id, 1) = 6;
+UPDATE patient_identifier SET identifier = "77777777/77/777"  WHERE right(patient_identifier_id, 1) = 7;
+UPDATE patient_identifier SET identifier = "88888888/88/888"  WHERE right(patient_identifier_id, 1) = 8;
+UPDATE patient_identifier SET identifier = "99999999/09/999"  WHERE right(patient_identifier_id, 1) = 9;
 
+--location
+UPDATE location SET name = "Java", description = "NA", address2 = "NA", state_province = "NA", country = "Ganymade", county_district = "NA", address6 = "NA" WHERE RIGHT(location_id, 1) = 0;
+UPDATE location SET name = "Spring", description = "NA", address2 = "NA", state_province = "NA", country = "Kepler", county_district = "NA", address6 = "NA" WHERE RIGHT(location_id, 1) = 1;
+UPDATE location SET name = "JPA", description = "NA", address2 = "NA", state_province = "NA", country = "Luna", county_district = "NA", address6 = "NA" WHERE RIGHT(location_id, 1) = 2;
+UPDATE location SET name = "AngulaJS", description = "NA", address2 = "NA", state_province = "NA", country = "Mars", county_district = "NA", address6 = "NA" WHERE RIGHT(location_id, 1) = 3;
+UPDATE location SET name = "ZK", description = "NA", address2 = "NA", state_province = "NA", country = "Brackets", county_district = "NA", address6 = "NA" WHERE RIGHT(location_id, 1) = 4;
+UPDATE location SET name = "Ruby", description = "NA", address2 = "NA", state_province = "NA", country = "TextMate", county_district = "NA", address6 = "NA" WHERE RIGHT(location_id, 1) = 5;
+UPDATE location SET name = "Azure", description = "NA", address2 = "NA", state_province = "NA", country = "NetBeans", county_district = "NA", address6 = "NA" WHERE RIGHT(location_id, 1) = 6;
+UPDATE location SET name = "Bootstrap", description = "NA", address2 = "NA", state_province = "NA", country = "IntellJ", county_district = "NA", address6 = "NA" WHERE RIGHT(location_id, 1) = 7;
+UPDATE location SET name = "NodeJS", description = "NA", address2 = "NA", state_province = "NA", country = "Sublime", county_district = "NA", address6 = "NA" WHERE RIGHT(location_id, 1) = 8;
+UPDATE location SET name = "MongoDb", description = "NA", address2 = "NA", state_province = "NA", country = "Notepad++", county_district = "NA", address6 = "NA" WHERE RIGHT(location_id, 1) = 9;
 
-
-
+-- location tag
+UPDATE location_tag SET name = "Hp", description = "NA" WHERE RIGHT(location_id, 1) = 0;
+UPDATE location_tag SET name = "Dell", description = "NA" WHERE RIGHT(location_id, 1) = 1;
+UPDATE location_tag SET name = "Sony", description = "NA" WHERE RIGHT(location_id, 1) = 2;
+UPDATE location_tag SET name = "Lg", description = "NA" WHERE RIGHT(location_id, 1) = 3;
+UPDATE location_tag SET name = "Samsung", description = "NA" WHERE RIGHT(location_id, 1) = 4;
+UPDATE location_tag SET name = "Huawei", description = "NA" WHERE RIGHT(location_id, 1) = 5;
+UPDATE location_tag SET name = "Philips", description = "NA" WHERE RIGHT(location_id, 1) = 6;
+UPDATE location_tag SET name = "Bose", description = "NA" WHERE RIGHT(location_id, 1) = 7;
+UPDATE location_tag SET name = "Apple", description = "NA" WHERE RIGHT(location_id, 1) = 8;
+UPDATE location_tag SET name = "Microsof", description = "NA" WHERE RIGHT(location_id, 1) = 9;

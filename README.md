@@ -55,9 +55,21 @@ mysql> source de-id-patients.sql
  - [x] `concept_id=2298`
  - [x] `concept_id=2299`
 
-### TODO
+### Patient Identifier
+ - [x] `identifier`
 
- - [ ] Patient Identifier(s)
+### Location
+ - [x] `name`
+ - [x] `description`
+ - [x] `address2`
+ - [x] `state_province`
+ - [x] `country`
+ - [x] `county_district`
+ - [x] `address6`
+
+### Location Tag
+ - [x] `name`
+ - [x] `description`
 
 ## Community
 
